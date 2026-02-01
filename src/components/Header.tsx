@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "/logo.png";
+import logo from "/new-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Źródło Ruchu" className="h-14 w-auto" />
+            <img src={logo} alt="Źródło Ruchu" className="h-10 w-auto" />
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
