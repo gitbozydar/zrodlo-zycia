@@ -120,26 +120,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Źródło Ruchu – Centrum Rehabilitacji.
-            Wszystkie prawa zastrzeżone.
-          </p>
-          <div className="flex gap-6 text-sm">
-            <Link
-              to="/polityka-prywatnosci"
-              className="text-background/50 hover:text-background transition-colors"
-            >
-              Polityka prywatności
-            </Link>
-            <Link
-              to="/regulamin"
-              className="text-background/50 hover:text-background transition-colors"
-            >
-              Regulamin
-            </Link>
-          </div>
-        </div>
       </div>
     </footer>
   );

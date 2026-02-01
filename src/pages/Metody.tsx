@@ -242,7 +242,7 @@ const Metody = () => {
                       </AccordionTrigger>
 
                       <AccordionContent className="px-6 pb-6">
-                        <div className="pl-[68px]">
+                        <div className="lg:pl-[68px]">
                           <p className="my-4 text-foreground">
                             {method.description}
                           </p>
