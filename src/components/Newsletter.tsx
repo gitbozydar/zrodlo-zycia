@@ -1,5 +1,5 @@
 import { CheckCircle, Gift } from "lucide-react";
-import newsletter from "@/assets/newsletter.pdf";
+import newsletter from "/newsletter.pdf";
 import { useState } from "react";
 
 const Newsletter = () => {

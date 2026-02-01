@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
+import logo from "/new-logo.png";
 
 const Footer = () => {
   return (
@@ -97,7 +97,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Gabinet 2 */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-6">
               Gabinet - Kłopot

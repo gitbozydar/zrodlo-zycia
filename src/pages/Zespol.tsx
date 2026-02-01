@@ -3,12 +3,12 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, BookOpen, UserRound } from "lucide-react";
-import doctor1 from "@/assets/doctor1.jpg";
-import doctor2 from "@/assets/doctor2.jpg";
-import doctor3 from "@/assets/doctor3.jpg";
-import doctor4 from "@/assets/doctor4.jpg";
-import doctor5 from "@/assets/doctor5.jpg";
-import doctor6 from "@/assets/doctor6.jpg";
+import doctor1 from "/doctor1.jpg";
+import doctor2 from "/doctor2.jpg";
+import doctor3 from "/doctor3.jpg";
+import doctor4 from "/doctor4.jpg";
+import doctor5 from "/doctor5.jpg";
+import doctor6 from "/doctor6.jpg";
 
 const team = [
   {

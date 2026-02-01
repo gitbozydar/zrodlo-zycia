@@ -1,11 +1,11 @@
 import { CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import Img1 from "@/assets/projekt1.png";
-import Img2 from "@/assets/projekt2.png";
-import Img3 from "@/assets/projekt3.png";
-import Img4 from "@/assets/projekt4.png";
-import Img5 from "@/assets/projekt5.png";
-import Img6 from "@/assets/projekt6.png";
+import Img1 from "/projekt1.png";
+import Img2 from "/projekt2.png";
+import Img3 from "/projekt3.png";
+import Img4 from "/projekt4.png";
+import Img5 from "/projekt5.png";
+import Img6 from "/projekt6.png";
 import { useEffect, useState } from "react";
 
 const features = [

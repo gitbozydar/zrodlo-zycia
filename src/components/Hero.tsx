@@ -1,6 +1,6 @@
 import { ArrowRight, Heart, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import HomeImg from "@/assets/bobas.jpg";
+import HomeImg from "/bobas.jpg";
 
 const Hero = () => {
   return (
