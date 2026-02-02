@@ -2,40 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, AlertCircle, Phone } from "lucide-react";
-
-const priceList = [
-  { service: "Neurolog dziecięcy", duration: "30 min.", price: "300 zł" },
-  {
-    service: "Rehabilitacja metodą Vojty",
-    duration: "30 min.",
-    price: "200 zł",
-  },
-  { service: "Rehabilitacja dzieci x 2", duration: "30 min.", price: "320 zł" },
-  { service: "Rehabilitacja dorosłych", duration: "45 min.", price: "160 zł" },
-  { service: "Osteopatia", duration: "30 min.", price: "200 zł" },
-  { service: "Terapia stóp", duration: "45-60 min.", price: "250-300 zł" },
-  {
-    service: "Kolejna wizyta terapii stóp",
-    duration: "30 min.",
-    price: "200 zł",
-  },
-  { service: "Neurologopeda", duration: "45 min.", price: "180 zł" },
-  {
-    service: "Badanie i dobór wkładek IGLI",
-    duration: "30 min.",
-    price: "470 zł",
-  },
-  { service: "Badanie kontrolne wkładek IGLI", duration: "-", price: "120 zł" },
-  { service: "Joga indywidualna", duration: "45 min.", price: "150 zł" },
-  { service: "Doradztwo psychologiczne", duration: "45 min.", price: "150 zł" },
-  { service: "Fala Uderzeniowa", duration: "-", price: "80 zł" },
-  {
-    service: "Opis/obserwacja neurologopedyczna",
-    duration: "-",
-    price: "120 zł",
-  },
-  { service: "Płyta z treningu słuchowego", duration: "-", price: "350 zł" },
-];
+import { priceList } from "@/data/priceList.js";
 
 const Cennik = () => {
   return (
@@ -43,7 +10,6 @@ const Cennik = () => {
       <Header />
       <main className="pt-32 pb-24 animate-fade-in">
         <div className="container mx-auto px-4">
-          {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block">
               Cennik
@@ -56,11 +22,8 @@ const Cennik = () => {
               uzyskasz podczas rejestracji.
             </p>
           </div>
-
-          {/* Price Table */}
           <Card className="max-w-4xl mx-auto bg-card border-0 shadow-card overflow-hidden">
             <CardContent className="p-0">
-              {/* Table Header */}
               <div className="grid grid-cols-12 gap-4 bg-muted/50 px-6 py-4 border-b border-border">
                 <div className="col-span-6 md:col-span-7">
                   <span className="text-sm font-semibold text-foreground">
@@ -78,8 +41,6 @@ const Cennik = () => {
                   </span>
                 </div>
               </div>
-
-              {/* Table Body */}
               <div className="divide-y divide-border">
                 {priceList.map((item, index) => (
                   <div
@@ -110,8 +71,6 @@ const Cennik = () => {
               </div>
             </CardContent>
           </Card>
-
-          {/* Cancellation Policy */}
           <div className="max-w-4xl mx-auto mt-8">
             <Card className="bg-destructive/5 border-destructive/20">
               <CardContent className="p-6">
@@ -139,8 +98,6 @@ const Cennik = () => {
               </CardContent>
             </Card>
           </div>
-
-          {/* Contact CTA */}
           <div className="max-w-4xl mx-auto mt-8 text-center">
             <Card className="bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 border-0">
               <CardContent className="p-8">

@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-6 opacity-0 animate-fade-in [animation-delay:400ms]">
               <div className="text-center p-4 rounded-xl bg-card shadow-soft">
                 <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">
-                  20+
+                  30+
                 </div>
                 <div className="text-xs md:text-sm text-muted-foreground">
                   Lat doświadczenia

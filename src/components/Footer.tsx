@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import logo from "/new-logo.png";
+import { locations } from "@/data/locations.js";
 
 const Footer = () => {
   return (
@@ -74,51 +75,28 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-6">
-              Gabinet - Ostródzka
-            </h4>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span className="text-background/70 text-sm">
-                  Ostródzka 119, 03-289 Warszawa
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-accent shrink-0" />
-                <a
-                  href="tel:+48505185572"
-                  className="text-background/70 hover:text-background transition-colors text-sm"
-                >
-                  +48 505 185 572
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-6">
-              Gabinet - Kłopot
-            </h4>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span className="text-background/70 text-sm">
-                  Kłopot 4, 01-066 Warszawa
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-accent shrink-0" />
-                <a
-                  href="tel:+48505185572"
-                  className="text-background/70 hover:text-background transition-colors text-sm"
-                >
-                  +48 505 185 572
-                </a>
+          {locations.map(({ name, address, phone, mapUrl }) => (
+            <div>
+              <h4 className="font-display text-lg font-semibold mb-6">
+                {name}
+              </h4>
+              <div className="flex flex-col gap-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-background/70 text-sm">{address}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-accent shrink-0" />
+                  <a
+                    href="tel:+48505185572"
+                    className="text-background/70 hover:text-background transition-colors text-sm"
+                  >
+                    {phone}
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </footer>

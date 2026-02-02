@@ -7,18 +7,8 @@ import Img4 from "/projekt4.png";
 import Img5 from "/projekt5.png";
 import Img6 from "/projekt6.png";
 import { useEffect, useState } from "react";
+import { features } from "@/data/features.js";
 
-const features = [
-  "rehabilitację metodą Vojty i NDT-Bobath od urodzenia do starości",
-  "fizjoterapię dzieci, młodzieży i dorosłych",
-  "trójwymiarową terapię manualną stóp wg Barbary Zukunft-Huber",
-  "dobór wkładek ortopedycznych IGLIneurologa (lekarz neurolog dziecięcy)",
-  "psychologa dla dzieci i dorosłych",
-  "neurologopedę",
-  "jogę",
-  "diagnostykę i konsultacje",
-  "osteopatię (terapia niemowląt i dzieci z wadami postawy i skoliozami, a także terapia dla dorosłych, w tym kobiet w okresie okołoporodowym)",
-];
 const images = [Img1, Img2, Img3, Img4, Img5, Img6];
 
 const About = () => {
