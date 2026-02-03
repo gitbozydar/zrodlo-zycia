@@ -37,6 +37,9 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
+            <div className="mt-4 text-background/70 hover:text-background transition-colors text-sm">
+              <Link to={"/rodo"}>Polityka prywatności.</Link>
+            </div>
           </div>
           <div>
             <h4 className="font-display text-lg font-semibold mb-6">
@@ -75,8 +78,8 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
-          {locations.map(({ name, address, phone, mapUrl }) => (
-            <div>
+          {locations.map(({ name, address, phone }, index) => (
+            <div key={index}>
               <h4 className="font-display text-lg font-semibold mb-6">
                 {name}
               </h4>

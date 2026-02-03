@@ -70,7 +70,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-card">
+            <div className="absolute -top-6 border left-2/4 -translate-x-2/4 bg-card p-6 rounded-2xl shadow-card">
               <div className="text-4xl font-display font-bold gradient-text mb-1">
                 Galeria
               </div>
