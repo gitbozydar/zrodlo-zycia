@@ -196,12 +196,12 @@ const UstawaKamilka = () => {
                   Standardy Ochrony Małoletnich są dostępne w wersji papierowej
                   w poczekalni i na stronie{" "}
                   <Link
-                    to="https://www.rehabilitacjavojta.pl/"
+                    to="https://zrodloruchu.pl/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-medium underline underline-offset-4"
+                    className="font-medium underline underline-offset-4 hover:text-primary"
                   >
-                    www.rehabilitacjavojta.pl
+                    zrodloruchu.pl
                   </Link>
                   , aby każdy mógł je przeczytać w dowolnym momencie.
                 </li>
