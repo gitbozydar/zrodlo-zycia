@@ -8,7 +8,7 @@ const UstawaKamilka = () => {
       <Header />
 
       <main className="py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 animate-fade-in">
           <div className="mx-auto max-w-4xl rounded-2xl border bg-card p-6 md:p-10 shadow-card space-y-8">
             <header className="space-y-2 text-center">
               <p className="text-sm text-muted-foreground">

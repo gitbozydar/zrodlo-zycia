@@ -13,7 +13,7 @@ const Metody = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 animate-fade-in">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block">
               Nasze metody

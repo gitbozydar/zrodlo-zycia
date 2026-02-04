@@ -19,7 +19,7 @@ const Kontakt = () => {
             </h1>
             <p className="text-muted-foreground text-lg">
               Masz pytania? Chcesz umówić wizytę? Skontaktuj się z nami
-              telefonicznie lub przez formularz kontaktowy.
+              telefonicznie.
             </p>
           </div>
 
