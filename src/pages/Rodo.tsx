@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Rodo = () => {
   return (
@@ -12,15 +13,12 @@ const Rodo = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <Card className="border-0 shadow-card">
             <CardContent className="p-8 md:p-12">
-              {/* HEADER */}
               <div className="flex items-center gap-3 mb-8">
                 <ShieldCheck className="h-8 w-8 text-primary" />
                 <h1 className="font-display text-3xl md:text-4xl font-bold">
                   Ochrona danych osobowych (RODO)
                 </h1>
               </div>
-
-              {/* INTRO */}
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Od 25 maja 2018 r. obowiązuje rozporządzenie Parlamentu
                 Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
@@ -35,10 +33,7 @@ const Rodo = () => {
                 osobowych osób odwiedzających serwis Centrum Rehabilitacji
                 Ostródzka.
               </p>
-
-              {/* SEKCJE */}
               <section className="space-y-10">
-                {/* DANE OSOBOWE */}
                 <div>
                   <h2 className="text-xl font-semibold mb-4">
                     Czym są dane osobowe?
@@ -57,8 +52,6 @@ const Rodo = () => {
                     w naszych serwisach internetowych.
                   </p>
                 </div>
-
-                {/* ZGODA */}
                 <div>
                   <h2 className="text-xl font-semibold mb-4">Zgoda</h2>
                   <p className="text-muted-foreground leading-relaxed">
@@ -73,8 +66,6 @@ const Rodo = () => {
                     cookie z urządzenia końcowego.
                   </p>
                 </div>
-
-                {/* ADMINISTRATOR */}
                 <div>
                   <h2 className="text-xl font-semibold mb-4">
                     Administrator danych osobowych
@@ -91,11 +82,15 @@ const Rodo = () => {
                   </p>
                   <p className="text-muted-foreground mt-2">
                     Szczegółowe dane kontaktowe dostępne są na stronie:
-                    <p className="text-red-500">STRONA</p>
+                    <p>
+                      <Link to={"/"}>
+                        <p className="underline hover:text-primary">
+                          zrodloruchu.pl
+                        </p>
+                      </Link>
+                    </p>
                   </p>
                 </div>
-
-                {/* PODSTAWA */}
                 <div>
                   <h2 className="text-xl font-semibold mb-4">
                     Podstawa i cel przetwarzania danych
