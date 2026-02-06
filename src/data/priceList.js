@@ -30,4 +30,9 @@ export const priceList = [
     price: "120 zł",
   },
   { service: "Płyta z treningu słuchowego", duration: "-", price: "350 zł" },
+  {
+    service: "Turnus rehabilitacyjny",
+    duration: "-",
+    price: "Wycena indywidualna",
+  },
 ];

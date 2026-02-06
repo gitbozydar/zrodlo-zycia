@@ -27,7 +27,6 @@ export const team = [
     achievements: [
       "Absolwentka szkolenia Internationale Vojta Gesellschaft e.V.",
       "Certyfikat trójwymiarowej terapii manualnej stóp",
-      "Liczne publikacje naukowe",
     ],
     trainings: [
       "Dobra Szkoła Ortopodologii (DSO) – Pakiet PIWO, eduPODOLOGIA.pl, styczeń 2026",

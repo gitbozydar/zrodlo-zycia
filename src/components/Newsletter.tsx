@@ -8,7 +8,7 @@ const Newsletter = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = newsletter;
-    link.download = "newsletter.pdf";
+    link.download = "Twoje pierwsze tygodnie z maluszkiem.pdf";
     link.click();
 
     setDownloaded(true);
