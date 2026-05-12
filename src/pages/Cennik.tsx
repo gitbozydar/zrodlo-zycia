@@ -115,7 +115,7 @@ const Cennik = () => {
                           </div>
 
                           <div className="flex items-center justify-center">
-                            <div className="grid grid-cols-[16px_auto] items-center gap-x-1 text-muted-foreground text-sm whitespace-nowrap w-[80px]">
+                            <div className="grid justify-end grid-cols-[16px_auto] items-center gap-x-1 text-muted-foreground text-sm whitespace-nowrap w-[80px]">
                               {item.duration !== "-" ? (
                                 <>
                                   <Clock className="h-4 w-4" />
