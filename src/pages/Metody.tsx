@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
@@ -9,18 +11,48 @@ import {
 import { methods } from "@/data/methods.js";
 
 const Metody = () => {
+  const location = useLocation();
+  const [openItem, setOpenItem] = useState("");
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const id = location.hash.replace("#", "");
+    setOpenItem(id);
+
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          const headerOffset = 120;
+          const elementPosition =
+            element.getBoundingClientRect().top + window.pageYOffset;
+
+          window.scrollTo({
+            top: elementPosition - headerOffset,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    });
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
+
       <main className="pt-32 pb-24">
         <div className="container mx-auto px-4 animate-fade-in">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block">
               Nasze metody
             </span>
+
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
               Metody <span className="gradient-text">terapii</span>
             </h1>
+
             <p className="text-muted-foreground text-lg">
               Stosujemy sprawdzone, certyfikowane metody terapeutyczne.
             </p>
@@ -29,22 +61,31 @@ const Metody = () => {
           <div className="max-w-4xl mx-auto space-y-6">
             {methods.map((method) => {
               const Icon = method.icon;
+
               return (
                 <div
                   key={method.id}
+                  id={method.id}
                   className="bg-card rounded-2xl shadow-card overflow-hidden"
                 >
-                  <Accordion type="single" collapsible>
+                  <Accordion
+                    type="single"
+                    collapsible
+                    value={openItem}
+                    onValueChange={setOpenItem}
+                  >
                     <AccordionItem value={method.id} className="border-0">
                       <AccordionTrigger className="px-6 py-6 hover:no-underline hover:bg-muted/50 transition-colors">
                         <div className="flex items-center gap-4 text-left">
                           <div className="p-3 bg-primary/10 rounded-xl">
                             <Icon className="h-6 w-6 text-primary" />
                           </div>
+
                           <div>
                             <h3 className="font-display text-xl font-semibold text-foreground">
                               {method.title}
                             </h3>
+
                             <p className="text-sm text-muted-foreground">
                               {method.subtitle}
                             </p>
@@ -83,6 +124,17 @@ const Metody = () => {
                               </div>
                             ))}
                           </div>
+
+                          {method.priceLink && (
+                            <div className="mt-6">
+                              <Link
+                                to={method.priceLink}
+                                className="w-max p-3 rounded-lg gradient-hero text-primary-foreground font-medium"
+                              >
+                                Zobacz cennik
+                              </Link>
+                            </div>
+                          )}
                         </div>
                       </AccordionContent>
                     </AccordionItem>
@@ -93,6 +145,7 @@ const Metody = () => {
           </div>
         </div>
       </main>
+
       <Footer />
     </div>
   );

@@ -11,6 +11,7 @@ export const methods = [
   {
     id: "vojta",
     icon: Baby,
+    priceLink: "/cennik#vojta",
     title: "Metoda Vojty",
     subtitle: "Skuteczna rehabilitacja niemowląt i dzieci oraz dorosłych",
     description:
@@ -69,12 +70,52 @@ export const methods = [
     ],
   },
   {
+    id: "pwo",
+    icon: Footprints,
+    title: "Wkładki PWO",
+    subtitle:
+      "Indywidualne wkładki odciążające wykonywane na podstawie badania stóp",
+    description:
+      "Indywidualne wkładki odciążające PWO są projektowane na podstawie analizy biomechaniki stóp oraz oceny postawy ciała. Pomagają zmniejszyć przeciążenia, poprawić komfort chodzenia i wspierają leczenie dolegliwości stóp oraz kończyn dolnych.",
+    priceLink: "/cennik#wkladki-pwo",
+    details: [
+      {
+        title: "Na czym polega?",
+        content:
+          "Wkładki wykonywane są indywidualnie na podstawie badania stóp, analizy chodu oraz odcisku stóp. Ich zadaniem jest równomierne rozłożenie nacisku, odciążenie przeciążonych struktur oraz poprawa ustawienia stóp i całej postawy.",
+      },
+      {
+        title: "Dla kogo?",
+        content: [
+          "Osoby z bólem stóp i kończyn dolnych",
+          "Pacjenci z ostrogą piętową lub zapaleniem rozcięgna podeszwowego",
+          "Osoby z wadami stóp i nieprawidłowym obciążaniem",
+          "Pacjenci po urazach kończyn dolnych",
+          "Osoby pracujące długo w pozycji stojącej",
+          "Sportowcy i osoby aktywne fizycznie",
+          "Pacjenci z zaburzeniami postawy i chodu",
+        ],
+      },
+      {
+        title: "Jak wygląda wizyta?",
+        content:
+          "Wizyta obejmuje wywiad, badanie stóp, analizę chodu i postawy na pedobarografie E.P.S./R2, pobranie miary oraz dopasowanie wkładek. Całość trwa około 45 minut.",
+      },
+      {
+        title: "Efekty stosowania",
+        content:
+          "Zmniejszenie bólu stóp, poprawa komfortu chodzenia, lepsza stabilność, mniejsze zmęczenie nóg oraz wsparcie terapii wad postawy.",
+      },
+    ],
+  },
+  {
     id: "stopy",
     icon: Footprints,
     title: "Trójwymiarowa terapia stóp",
     subtitle: "Skuteczna rehabilitacja wad stóp u dzieci i dorosłych",
     description:
       "Nowoczesna i precyzyjna metoda leczenia deformacji stóp u niemowląt, dzieci i dorosłych.",
+    priceLink: "/cennik#stopy",
     details: [
       {
         title: "Na czym polega?",
@@ -102,6 +143,7 @@ export const methods = [
     id: "osteopatia",
     icon: Sparkles,
     title: "Osteopatia",
+    priceLink: "/cennik#osteopatia",
     subtitle: "Delikatna terapia manualna dla dzieci i dorosłych",
     description:
       "Bezpieczna i skuteczna forma terapii manualnej oparta na holistycznym podejściu do zdrowia.",
@@ -134,6 +176,7 @@ export const methods = [
     subtitle: "Nowoczesna terapia wad postawy i stóp",
     description:
       "Dynamiczne, sensoryczne wkładki indywidualnie dopasowane wspomagające terapię wad postawy i chodu u dzieci i dorosłych.",
+    priceLink: "/cennik#wkladki-igli",
     details: [
       {
         title: "Na czym polega?",
@@ -164,6 +207,7 @@ export const methods = [
     subtitle: "Diagnostyka i konsultacje neurologiczne",
     description:
       "Wczesna diagnostyka neurologiczna wspierająca prawidłowy rozwój motoryczny, poznawczy i emocjonalny dziecka.",
+    priceLink: "/cennik#neurolog-dzieciecy",
     details: [
       {
         title: "Zakres usług",
