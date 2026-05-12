@@ -107,7 +107,7 @@ const Cennik = () => {
                             : ""
                         }`}
                       >
-                        <div className="grid grid-cols-3 gap-4 w-full pr-4 text-left">
+                        <div className="grid grid-cols-3 gap-4 w-full pr-2 text-left">
                           <div className="flex items-center min-w-0">
                             <span className="text-foreground break-words">
                               {item.service}
