@@ -131,7 +131,7 @@ const Cennik = () => {
                           </div>
 
                           <div className="flex items-center justify-end min-w-0">
-                            <span className="font-semibold text-primary text-right whitespace-nowrap">
+                            <span className="font-semibold text-primary text-right whitespace-normal break-words">
                               {item.price}
                             </span>
                           </div>
