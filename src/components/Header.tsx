@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook } from "lucide-react";
 import logo from "/new-logo.png";
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
+      <div className="container px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="Źródło Ruchu" className="h-14 w-auto" />
@@ -51,6 +51,24 @@ const Header = () => {
                 Umów wizytę
               </button>
             </Link>
+            <div className="flex gap-2">
+              <a
+                href="https://www.instagram.com/zrodlo_ruchu_warszawa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/20 text-primary rounded-lg hover:bg-primary/40 transition-colors h-max"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/rehabilitacjavojta"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/20 text-primary rounded-lg hover:bg-primary/40 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+            </div>
           </div>
           <button
             className="lg:hidden p-2 hover:bg-muted rounded-lg transition-colors"
@@ -80,20 +98,38 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-border">
+              <div className="flex pt-4 border-t border-border gap-4">
                 <a
                   href="tel:+48505185572"
-                  className="flex items-center gap-2 text-base font-medium text-primary mb-4"
+                  className="flex items-center gap-2 text-base font-medium text-primary"
                 >
                   <Phone className="h-5 w-5" />
                   +48 505 185 572
                 </a>
-                <Link to={"/Kontakt"}>
-                  <button className="w-full py-3 rounded-lg gradient-hero text-primary-foreground font-medium">
-                    Umów wizytę
-                  </button>
-                </Link>
+                <div className="flex gap-2">
+                  <a
+                    href="https://www.instagram.com/zrodlo_ruchu_warszawa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-primary/20 text-primary rounded-lg hover:bg-primary/40 transition-colors h-max"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/rehabilitacjavojta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-primary/20 text-primary rounded-lg hover:bg-primary/40 transition-colors"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                </div>
               </div>
+              <Link to={"/Kontakt"}>
+                <button className="w-full py-3 rounded-lg gradient-hero text-primary-foreground font-medium">
+                  Umów wizytę
+                </button>
+              </Link>
             </nav>
           </div>
         )}

@@ -29,7 +29,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/centrum_rehabilitacji_warszawa"
+                href="https://www.instagram.com/zrodlo_ruchu_warszawa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-background/10 rounded-lg hover:bg-background/20 transition-colors"
