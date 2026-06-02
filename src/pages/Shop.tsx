@@ -218,12 +218,13 @@ export default function Shop() {
           </span>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Webinary i kursy <span className="gradient-text">online</span>
+            Webinary i e-booki <span className="gradient-text">online</span>
           </h1>
 
           <p className="text-muted-foreground text-lg">
-            Praktyczne materiały stworzone dla osób, które chcą redukować ból,
-            poprawić mobilność i lepiej rozumieć swoje ciało.
+            Praktyczne materiały stworzone dla przyszłych i obecnych rodziców,
+            którzy - bez oceniania i presji idealnego rodzicielstwa - chcą
+            zadbać o prawidłowy rozwój swojego dziecka.
           </p>
         </div>
 
