@@ -40,3 +40,7 @@
 .read-the-docs {
   color: #888;
 }
+
+.shopify-buy__product .shopify-buy__product__price {
+  margin: 0 !important;
+}
