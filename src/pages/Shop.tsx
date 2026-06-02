@@ -31,7 +31,6 @@ function getOptions() {
         },
 
         img: {
-          width: "100%",
           height: "240px",
           "border-radius": "1rem",
           "object-fit": "cover",
