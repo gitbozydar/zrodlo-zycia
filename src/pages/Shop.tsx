@@ -75,9 +75,7 @@ function getOptions() {
 
     modalProduct: {
       styles: {
-        img: {
-          "min-height": "400px",
-        },
+        img: {},
       },
       contents: {
         img: false,
