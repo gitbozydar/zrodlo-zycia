@@ -74,11 +74,11 @@ const Rodo = () => {
                     Administratorem danych osobowych jest:
                   </p>
                   <p className="mt-3 font-medium">
-                    Centrum Rehabilitacji Ostródzka
+                    "REH - MAS" Żanetta Babilińska-Grodzicka
                     <br />
-                    Ostródzka 119
+                    ul. Ostródzka 119
                     <br />
-                    03-179 Warszawa
+                    03-289 Warszawa
                   </p>
                   <p className="text-muted-foreground mt-2">
                     Szczegółowe dane kontaktowe dostępne są na stronie:

@@ -12,6 +12,7 @@ const Header = () => {
     { name: "Metody terapii", path: "/metody" },
     { name: "Zespół", path: "/zespol" },
     { name: "Cennik", path: "/cennik" },
+    { name: "Sklep", path: "/sklep" },
     { name: "Kontakt", path: "/kontakt" },
     { name: "Ustawa Kamilka", path: "/ustawa-kamilka" },
   ];

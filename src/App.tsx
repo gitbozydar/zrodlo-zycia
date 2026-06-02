@@ -15,6 +15,7 @@ import Terapeuta from "./pages/Terapeuta";
 import Rodo from "./pages/Rodo";
 import CookiesBanner from "./pages/CookiesBanner";
 import UstawaKamilka from "./pages/UstawaKamilka";
+import Shop from "./pages/Shop";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/metody" element={<Metody />} />
+          <Route path="/sklep" element={<Shop />} />
           <Route path="/zespol" element={<Zespol />} />
           <Route path="/cennik" element={<Cennik />} />
           <Route path="/kontakt" element={<Kontakt />} />
