@@ -4,6 +4,7 @@ import doctor3 from "/doctor3.jpg";
 import doctor4 from "/doctor4.jpg";
 import doctor5 from "/doctor5.jpg";
 import doctor6 from "/doctor6.jpg";
+import doctor7 from "/doctor7.jpg";
 
 export const team = [
   {
@@ -295,6 +296,58 @@ export const team = [
     trainings: [
       "Kursy i szkolenia osteopatyczne dla dzieci",
       "Warsztaty z technik manualnych",
+    ],
+  },
+  {
+    id: "sylwia-staciwa",
+    name: "Sylwia Staciwa",
+    imgPath: doctor7,
+
+    role: "Fizjoterapeutka",
+
+    specializations: [
+      "Fizjoterapia niemowląt i dzieci",
+      "Fizjoterapia neurologiczna",
+      "Fizjoterapia oddechowa",
+    ],
+
+    description:
+      "Fizjoterapeutka specjalizująca się w pracy z większymi dziećmi oraz niemowlętami, w zakresie chorób neurologicznych, wad genetycznych, opóźnień rozwoju psychoruchowego, asymetrii, zaburzeń wzorca oddechowego, wad stóp oraz wad postawy. Doświadczenie kliniczne zdobywała w ośrodku rehabilitacji neurologicznej, na oddziale neonatologicznym i patologii noworodka oraz w przychodni rehabilitacyjnej Gdańskiego UCK. Prowadzi terapię metodą Vojty, PNF, technikami manualnymi Zoga Movement oraz terapię oddechową.",
+
+    education: [
+      "Gdański Uniwersytet Medyczny – Magister (2017–2020)",
+      "Państwowa Wyższa Szkoła Zawodowa w Koszalinie – Licencjat (2015–2018)",
+    ],
+
+    achievements: [
+      "Doświadczenie kliniczne w ośrodku rehabilitacji neurologicznej",
+      "Doświadczenie na oddziale neonatologicznym i patologii noworodka",
+      "Doświadczenie w przychodni rehabilitacyjnej Gdańskiego UCK",
+      "Prowadzenie własnego gabinetu fizjoterapeutycznego",
+      "Prowadzenie zajęć klinicznych dla studentów",
+      "Praca jako wykładowca akademicki na kierunku fizjoterapia",
+    ],
+
+    trainings: [
+      "Absolwentka szkolenia Internationale Vojta Gesellschaft e.V.",
+      "Fizjoterapia oddechowa w ujęciu neurodiagnostycznym",
+      "Zoga Movement",
+      "Zoga Movement w terapii niemowląt (2026)",
+      "Kontakt wzrokowy z rozwojem psychomotorycznym w I roku życia (2025)",
+      "AG – Aktywność nerwu błędnego oraz funkcjonowanie AUN w odniesieniu do odruchowej lokomocji (2025)",
+      "Warsztat – ABC fizjoterapeuty dziecięcego – klatka piersiowa, diagnostyka IAP (2025)",
+      "AG – Odruchowe pełzanie – cykl kroku w planowanym ruchu (2025)",
+      "Fizjoterapia oddechowa w ujęciu neurodiagnostycznym – moduł II (2025)",
+      "AG – Rola przepony w kontroli posturalnej w kontekście terapii metodą Vojty (2024)",
+      "Stosowana Kinezjologia Rozwojowa według Vojty dla niemowląt, dzieci i młodzieży z zaburzeniami ruchowymi (2023–2024)",
+      "Ontogeneza motoryczna wraz z odruchami w I roku życia (2024)",
+      "Fizjoterapia oddechowa w ujęciu neurodiagnostycznym – moduł I (2024)",
+      "Elastyczny terapeutyczny taping w pediatrii (2024)",
+      "Idiopatyczne chodzenie na palcach (2023)",
+      "Asymetria niemowlęca w ujęciu holistycznym (2023)",
+      "Trójpłaszczyznowa manualna terapia wad stóp u dzieci wg Zukunft-Huber (2022)",
+      "Rehabilitacja w zaburzeniach rozwojowych niemowląt od 0–12 miesięcy (2021)",
+      "Kurs PNF podstawowy (2020)",
     ],
   },
 ];
